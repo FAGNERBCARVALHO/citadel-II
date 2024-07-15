@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Citadel Acabamentos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <img src="/img/00001.jpg" alt="" class="servico-body">
+    <header>
+        <div class="container">
+            <img src="./img/magrelo logo.jpg" alt="" class="logo">
+            <h1>Citadel Acabamentos</h1>
+            <nav>
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li onclick="aparecerFormulario()"><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+
+        </div>
+    </header>
+
+    <section id="sobre">
+        <div class="container">
+            <h2>Sobre Nós</h2>
+            <p>A Citadel Acabamentos é especializada em serviços de acabamentos internos e externos, oferecendo
+                qualidade e sofisticação em cada projeto.</p>
+        </div>
+    </section>
+
+    <section id="servicos">
+        <div class="container">
+
+            <h2>Serviços</h2>
+            <div class="servico">
+                <h3>Acabamentos Internos</h3>
+                <p>Oferecemos uma ampla gama de serviços de acabamentos internos, incluindo pintura, revestimento,
+                    gesso e muito mais.</p>
+            </div>
+            <div class="servico">
+                <h3>Acabamentos Externos</h3>
+                <p>Nossos acabamentos externos garantem durabilidade e beleza para a sua fachada, utilizando
+                    materiais de alta qualidade.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projetos">
+        <divdiv class="container">
+            <h2>Projetos</h2>
+            <div class="projeto">
+                <img src="projeto1.jpg" alt="Projeto 1">
+                <h3>Projeto Residencial</h3>
+                <p>Descrição do projeto residencial com detalhes sobre os acabamentos utilizados.</p>
+            </div>
+            <div class="projeto">
+                <img src="projeto2.jpg" alt="Projeto 2">
+                <h3>Projeto Comercial</h3>
+                <p>Descrição do projeto comercial com detalhes sobre os acabamentos utilizados.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato">
+        <div class="mascara-formulario" onclick="desaparecerFormulario()">
+            <div class="container">
+                <button onclick="desaparecerFormulario()" class="button-form"> X</button>
+
+                <h2>Contato</h2>
+                <p>Entre em contato conosco para mais informações sobre nossos serviços e projetos.</p>
+                <form>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem"></textarea>
+                    <button  type="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Citadel Acabamentos. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+<script src="./script.js"></script>
+
+</html>

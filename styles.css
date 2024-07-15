@@ -1,0 +1,207 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+    text-align: center;
+}
+
+.logo {
+    position: absolute;
+    left: 80%;
+    margin-top: -25px;    
+    max-height: 130px;
+    border-radius: 50%;
+    z-index: 1;
+
+}
+
+.servico-body {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    z-index: -3;
+    object-fit: cover;
+
+
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 40px 0;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.servico,
+.projeto {
+    margin-bottom: 20px;
+}
+
+.servico h3,
+.projeto h3 {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+.projeto img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+
+#contato {
+    align-items: center;
+    position: fixed;
+    top: 80px;
+    width: 300px;
+    height: 100%;
+    z-index: 3;
+    left: -100%;
+    transition: 1.5s;
+
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+.button-form{
+    font-size: 35px;
+    background: rgba(10, 12, 16, 0.99) 15%;
+    color: #fff;
+}
+.menu-toggle {
+    display: none;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+.mascara-formulario {
+    max-width: 300px;
+    visibility: hidden;
+    position: fixed;
+    top:0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+    transition: visibility 1s ease-in-out;
+    color: #fff;
+}
+@media (max-width:660px) {
+    .container{
+        display: flexbox;
+    }
+    .logo {
+        position: absolute;
+        right: 10%;
+        margin-top: -25px;    
+        max-height: 114px;
+        border-radius: 50%;
+        z-index: 1;
+    
+    }
+    header h1 {
+        margin: 0;
+        font-size: 2em;
+        text-align: center;
+        width: 80%;
+    }
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: #333;
+        position: absolute;
+        top: 50px;
+        left: 90%;
+        z-index: -1;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+    
+}
+@media (max-width:420px){
+    header h1 {
+        margin: 0;
+        font-size: 2em;
+        text-align: center;
+        width: 60%;
+        display: none;
+    }
+    .logo {
+        position: absolute;
+        right: 10%;
+        margin-top: -25px;    
+        max-height: 75px;
+        border-radius: 50%;
+        z-index: 1;
+    
+    }
+
+}
